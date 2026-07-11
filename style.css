@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+font-family:'calibri', 'Roboto',Arial, Helvetica, verdana;
+}
+h1,h2,h3
+{
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #e3d5f1;
+    color: =#2b1d42;
+    line-height: 1.7;
+}
+header
+{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+background-color: rgba(251, 249,253,0.9);
+border-bottom: 1px solid rgba(43, 29, 66, 0.08);
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px 6% ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo
+{
+    font-family: Georgia, 'Times New Roman',serif;
+    font-weight: bold;
+    font-size:larger;
+    color: #2b1d42;
+}
+.nav-links
+{
+    display: flex;
+    gap: 26px;
+    list-style: none;
+}
+.nav-links a
+{
+   color: #2b1d42; 
+   font-size: medium;
+}
+.nav-links a:hover
+{
+    color: #a51060;
+}
+#modeToggle
+{
+    background-color: #2e0843;
+    color: #fbf9fd;
+    border :none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: large;
+}
+.hero
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 6% 60px;
+}
+.profile-pic
+{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+.hero h1
+{
+    font-size: 3rem;
+    color: #6e0652;
+    margin-bottom: 6px;
+}
+.hero h2
+{
+font-size: 1.5rem;
+font-style: italic;
+font-weight: normal;
+color: #91479f;
+min-height: 2.2rem;
+margin-bottom: 10px;
+}
+.cursor
+{
+   border-right: 2px solid #9b7fc0; 
+   animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.tagline {
+    color: #6B6178;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+.button-mainbutton {
+    background-color: #2B1D42;
+    color: #FBF9FD;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.button-mainbutton:hover {
+    background-color: #ad2e92;
+}
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+main section {
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(43, 29, 66, 0.08);
+}
+
+main section:last-of-type {
+    border-bottom: none;
+}
+
+main section h2 {
+    font-size: 1.9rem;
+    color: #2B1D42;
+    margin-bottom: 28px;
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #9B7FC0;
+}
+
+main section p {
+    color: #544764;
+    margin-bottom: 14px;
+}
+
+main section p strong {
+    color: #2B1D42;
+}
+.college ul {
+    list-style: none;
+    background-color: #F1EAFA;
+    padding: 26px 28px;
+    border-radius: 14px;
+    border-left: 4px solid #2B1D42;
+}
+
+.college h3 {
+    color: #2B1D42;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+}
+
+.college li {
+    color: #6B6178;
+    margin-bottom: 4px;
+}
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list li {
+    background-color: #F1EAFA;
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-size: 0.92rem;
+    border: 1px solid #E7DAF5;
+}
+
+.skills-list li:hover {
+    border-color: #9B7FC0;
+}
+.projectcard {
+    background-color: #F1EAFA;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 22px;
+    border-left: 4px solid #9B7FC0;
+}
+
+.projectcard h3 {
+    color: #2B1D42;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.projectcard p {
+    margin-bottom: 12px;
+}
+
+.projectcard a {
+    color: #2B1D42;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-bottom: 2px solid #9B7FC0;
+}
+.certifi {
+    list-style: none;
+}
+
+.certifi li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(43, 29, 66, 0.08);
+}
+
+.certifi li:last-child {
+    border-bottom: none;
+}
+
+.certiname {
+    font-weight: bold;
+    color: #2B1D42;
+}
+
+.certicomp {
+    font-size: 0.85rem;
+    color: #6B6178;
+}
+.langu {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.langu li {
+    background-color: #F1EAFA;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+.contact-info p {
+    font-size: 1.02rem;
+    margin-bottom: 14px;
+}
+
+.contact-info a {
+    color: #2B1D42;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #9B7FC0;
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 34px;
+    color: #6B6178;
+    font-size: 0.85rem;
+}
+
+body.dark {
+    background-color: #1f1331;
+    color: #F1EAFA;
+}
+
+body.dark header {
+    background-color: rgba(28, 20, 40, 0.9);
+}
+
+body.dark .logo,
+body.dark .hero h1,
+body.dark main section h2,
+body.dark .college h3,
+body.dark .projectcard h3,
+body.dark .certiname,
+body.dark .contact-info a,
+body.dark .nav-links a {
+    color: #F1EAFA;
+}
+
+body.dark .college ul,
+body.dark .skills-list li,
+body.dark .projectcard,
+body.dark .langu li {
+    background-color: #2B1D42;
+}
+
+body.dark main section p,
+body.dark .college li,
+body.dark .certicomp,
+body.dark footer {
+    color: #B9AECF;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    main section {
+        padding: 50px 0;
+    }
+}
