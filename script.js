@@ -48,5 +48,13 @@ document.addEventListener('DOMContentLoaded', () =>
         body.classList.toggle('dark');
         modeToggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
     });
+function showSection() {
+        const hash = window.location.hash.slice(1) || 'about';
+        document.querySelectorAll('main section').forEach(section => {
+            section.classList.toggle('active', section.id === hash);
+        });
+    }
 
+    window.addEventListener('hashchange', showSection);
+    showSection();
 });
