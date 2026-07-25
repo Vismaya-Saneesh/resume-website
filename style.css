@@ -142,6 +142,7 @@ main {
 main section {
     padding: 70px 0;
     border-bottom: 1px solid rgba(43, 29, 66, 0.08);
+     scroll-margin-top: 100px;
 }
 
 main section:last-of-type {
@@ -302,7 +303,10 @@ body.dark .college h3,
 body.dark .projectcard h3,
 body.dark .certiname,
 body.dark .contact-info a,
-body.dark .nav-links a {
+body.dark .nav-links a,
+body.dark main section p strong ,
+body.dark .projectcard a
+{
     color: #F1EAFA;
 }
 
@@ -311,6 +315,7 @@ body.dark .skills-list li,
 body.dark .projectcard,
 body.dark .langu li {
     background-color: #2B1D42;
+     border-left-color: #c9AEDF;
 }
 
 body.dark main section p,
@@ -333,4 +338,10 @@ body.dark footer {
     main section {
         padding: 50px 0;
     }
+}
+main section{
+    display: none;
+}
+main section.active{
+    display: block;
 }
